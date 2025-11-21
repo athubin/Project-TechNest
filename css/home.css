@@ -1,0 +1,329 @@
+ /* Reset and base styling */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   /* font-family: Arial, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Pacifico', cursive;*/
+    background-color: #f4f4f9;
+}
+
+/* Top menu styling */
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo styling */
+.top-menu .logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation links styling */
+.top-menu .nav-links {
+    display: flex;
+    gap: 1em;
+}
+
+.top-menu .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.top-menu .nav-links a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Login button styling */
+.top-menu .login-btn {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.top-menu .login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .top-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-menu .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .top-menu .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/*slider css*/
+
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px;*/
+     position: relative;
+     margin: auto;
+   }
+   
+   .slideshow-container img{
+       width:100%;
+       height: 550px;
+   }
+   /* Hide the images by default */
+   .mySlides {
+     display: none;
+   }
+   
+   /* Next & previous buttons */
+   .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+   }
+   
+   /* Position the "next button" to the right */
+   .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+   }
+   
+   /* On hover, add a black background color with a little bit see-through */
+   .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+   }
+   
+   /* Caption text */
+   .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+   }
+   
+   /* Number text (1/3 etc) */
+   .numbertext {
+     color: #f2f2f2;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+   }
+   
+   /* The dots/bullets/indicators */
+   .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+   }
+   
+   .active, .dot:hover {
+     background-color: #717171;
+   }
+   
+   /* Fading animation */
+   .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+   
+   @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+   }
+
+   /* search, technest*/ 
+   .heading{
+    position: absolute;
+    top: 17%;
+    right: 10%;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bolder;
+    /*font-family: auto;*/
+    /*font-family: 'Pacifico', cursive;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  .tagline{
+    position: absolute;
+    top: 29%;
+    right: 10%;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: auto;
+  }
+  
+  .search input[type="text"]{
+    position:absolute;
+    top: 65%;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 25%;
+    background: #f1f1f1;
+    padding:10px;
+    right:17%;
+  }
+  
+  .search input[type="submit"] {
+    position:absolute;
+    top:65%;
+    right:5%;
+    float: left;
+    width: 12%;
+    background: #e48214;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+    padding:10px;
+  }
+
+  .property-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .property-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .property-card:hover{
+    transform: scaleY(1.05);
+  }
+  
+  .property-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 200px;
+  }
+  
+  .property-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  
+  .property-card p {
+    margin: 5px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  
+  .button:hover {
+    background: #218838;
+  }
+  
+  .pdetails{
+    width:100%;
+  }
+
+  .newadd{
+    margin-right:25px;
+  }
+  
+  .newadd h1{
+    font-style : italic;
+    padding-left: 25px;
+  }
+
+  /*footer*/
+
+  /* Footer styling */
+  .footer-bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+
+/* Social media icons styling */
+.footer-bottom .social-icons {
+    margin: 0.5em 0;
+}
+.footer-bottom .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+.footer-bottom .social-icons a:hover {
+    color: #4CAF50;
+}
+
+/* tenant */
+
+.sitename{
+  float: left;
+}
+
+/*logo*/
+
+.circle-image {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Make the height and width equal for a perfect circle */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circle properly */
+  border: 2px solid #000; /* Optional: Adds a border */
+}

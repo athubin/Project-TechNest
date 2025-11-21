@@ -1,0 +1,59 @@
+.tform{
+    padding:10px;
+}
+
+input{
+    padding:5px;
+    margin-top: 10px;
+    margin-left:23px;
+}
+
+select{
+    padding:5px;
+    margin-top: 10px;
+    margin-left:44px;
+}
+
+.newtype button{
+    margin-top:25px;
+}
+
+.formclass{
+    margin-top:7%;
+}
+
+.save{
+    margin-top:20px;
+}
+
+.t-container {
+    width: 60%;
+    margin: 20px auto;
+    /*border: 1px solid #ddd;
+    border-radius: 5px;*/
+    overflow: hidden;
+}
+.header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid;
+}
+.row {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.row:last-child {
+    border-bottom: none;
+}
+.cell {
+    flex: 1;
+}
+
+.back{
+    float:left;
+    margin-top: 20px;
+}

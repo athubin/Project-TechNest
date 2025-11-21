@@ -1,0 +1,103 @@
+body .adminprop {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    width:75%;
+}
+.propcontainer {
+    max-width: 85%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.propcontainer h2 {
+    color: #333;
+    text-align: center;
+}
+.propcontainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.propcontainer table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.propcontainer table th {
+    background-color: midnightblue;
+    color: white;
+}
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 17px;
+}
+.approve-btn, .deny-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+.approve-btn {
+    background-color: #4CAF50;
+}
+.deny-btn {
+    background-color: #f44336;
+}
+.approve-btn:hover {
+    background-color: #45a049;
+}
+.deny-btn:hover {
+    background-color: #e53935;
+}
+
+/* Notification Styling */
+.notification {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s, transform 0.4s;
+    z-index: 1000;
+}
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.notification.deny {
+    background-color: #f44336;
+}
+
+.status {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.approved {
+    background-color: #4CAF50;
+}
+.rejected {
+    background-color: #f44336;
+}
+
+/*admin submenu li */
+.container .sidebar li {
+    padding: 10px;
+}
+.container .sidebar li:hover {
+    background-color: green;
+}
+

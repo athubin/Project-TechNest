@@ -1,0 +1,129 @@
+.logo{
+    float:left;
+    background-color:#333333;
+    height:70px;
+    width:80px;
+  }
+  
+  .logo img{
+    height:60px;
+    width:80px;
+    padding: 5px;
+    margin-left: 25px;
+  }
+  
+  /*ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333333;
+    height:70px;
+   /* margin-top: 25px; 
+  
+  }*/
+  
+  li {
+    float: left;
+    padding-top:25px;
+    margin-right:3%;
+    margin-left:3%;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;  
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+  
+  .bgimg{
+    position: relative;
+  }
+  
+  .bgimg img{
+    height:530px;
+    width:100%;
+  }
+  
+  
+  .contact-heading h1{
+    position:absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 60px;
+    color: white;
+    font-style: italic;
+  }
+  
+  .userform{
+    margin-top : 50px;
+    margin-left: 25%;
+    margin-bottom: 25px;
+  }
+  
+  .userform input[type=text], select, textarea {
+    width: 60%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #000; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 15%;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover, input[type=reset ]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .about-bg{
+    position: relative;
+  }
+  
+  .about-bg img{
+    height:520px;
+    width:100%;
+  }
+  
+  .about-heading h1{
+    position:absolute;
+    top: 33%;
+    left: 50%;
+    font-size: 60px;
+    color: black;
+    font-style: italic;
+    font-family: none;
+  }
+  
+  .about{
+    font-size: 20px;
+    font-style: normal;
+    font-family: auto;
+    font-weight: 600;
+    margin: 25 50 25 25;
+    text-align: justify;
+    margin: 30px;
+    line-height: 1.5;
+  }
